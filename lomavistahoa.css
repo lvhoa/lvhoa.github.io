@@ -1,0 +1,265 @@
+/*
+  $ MARGIN RESET
+*/
+
+body,
+div {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  line-height: 1.4em;
+  margin: 0 0 1.5rem;
+}
+a {
+  text-decoration: none;
+}
+  a:link {
+    color: #07c;
+  }
+    a:visited {
+      color: #4a6b82;
+    }
+    a:hover {
+      color: #0af;
+    }
+    a:active {
+      color: #2d3618;
+    }
+
+/*
+  $ BODY CLASSES
+  Listed in alphabetical order
+*/
+
+.body-lvhoa {
+  background-attachment: fixed;
+  background-color: #d7ddc8;
+  background-image: -webkit-linear-gradient(#a1b392, #d7ddc8 400px);
+    background-image: -moz-linear-gradient(#a1b392, #d7ddc8 400px);
+    background-image: linear-gradient(#a1b392, #d7ddc8 400px);
+  font-family: 'Open Sans', Helmet, Freesans, sans-serif;
+  margin-top: 1em;
+}
+
+/*
+  $ CLASSES
+  Listed in alphabetical order
+*/
+
+.alert-link {
+  font-weight: bold;
+}
+
+.l-adr { /* Street addresses */
+}
+  .l-adr-header { /* Address of the community */
+    letter-spacing: .125em;
+  }
+  .l-adr-email {
+  }
+    .l-adr-email::after {
+      color: #686;
+      content: "("attr(data-email)")";
+      font-size: .75em;
+      font-weight: normal;
+      margin-left: .3em;
+    }
+.l-notice {
+  font-size: 1.5em;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.l-dload { /* Links to downloadable documents */
+}
+  .l-dload::after {
+    color: #686;
+    content: "(."attr(title)")";
+    font-size: .75em;
+    font-weight: normal;
+    margin-left: .3em;
+  }
+.l-header {
+    color: #fff;
+}
+  .l-header_sign {
+      background: url(loma-vista-sign-large.jpg) no-repeat center 37%;
+      -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+      background-size: cover;
+      display: block;
+      height: 224px;
+  }
+.l-hn {
+  font-family: 'Arbutus Slab', Georgia, serif;
+  font-weight: normal;
+}
+  .l-hn-header {
+    color: #fff;
+  }
+  .l-hn_info {
+    margin-bottom: .1rem;
+  }
+  .l-hn-section {
+    color: #4c5425;
+    font-size: 2.25rem;
+  }
+  .l-hn-subsection {
+    color: #161;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+.l-isle {
+  padding: 1rem;
+}
+.l-jump {
+  float: right;
+  margin: 0;
+}
+  .l-jump a {
+    background-color: #c5c5c5;
+    border-radius: .5em;
+    color: #fff;
+    display: inline-block;
+    font-size: .6em;
+    font-weight: normal;
+    padding: .25em 1em;
+    text-align: right;
+  }
+    .l-jump a:hover {
+      background-color: #888;
+    }
+
+
+.l-module {
+  border: 1px solid #b4b4ac;
+  border-radius: .375rem;
+  margin-bottom: 1em;
+}
+  .l-module_header {
+    background-color: #4c5425;
+    text-align: center;
+  }
+  .l-module_content {
+    background-color: #f4f4ec;
+  }
+
+  .l-module--danger { /* Warning Message */
+    background-color: #fdd;
+    border-color: #ecc;
+    color: #a44;
+  }
+    .l-module--danger .alert-link {
+      color: #833;
+    }
+
+
+.l-title {
+  font-size: 2.5rem;
+}
+.l-wrapper {
+  margin: auto;
+}
+.nav {
+  list-style: none;
+}
+  .nav-header {
+    text-align: center;
+  }
+  .nav_link {
+    background-color: rgba(14, 25, 12, .5);
+    border-bottom: 2px solid #010;
+    border-radius: .250rem;
+    display: inline-block;
+    padding: .5em;
+    margin-right: 1.25em;
+  }
+    .nav_link:hover {
+      background-color: rgba(0, 25, 0, .9);
+    }
+    .nav_link a {
+      color: #ffd;
+    }
+      .nav_link a:hover {
+        color: #fff;
+      }
+    .nav_link-last {
+      margin-right: 0;
+    }
+.outdated {
+  color: #676;
+}
+
+/*
+  $ RESPONSIVE
+*/
+
+@media screen and (max-width: 479px) {
+/* Handheld Portrait */
+  .l-adr-header { /* Address of the community */
+    font-size: 0.9rem;
+  }
+  .l-bl { /* Adjusts bulleted list alignment */
+    list-style-position: outside;
+    margin-left: -1.25rem;
+  }
+  .l-header_sign {
+      height: 7em;
+  }
+  .l-hn-section {
+    font-size: 1.5rem;
+  }
+    .l-hn-subsection  {
+      font-size: 1rem;
+    }
+  .l-title {
+    font-size: 1.25rem;
+  }
+  .l-wrapper {
+  margin-left: .5em;
+  margin-right: .5em;
+  }
+  .nav_link {
+    margin-bottom: .5em;
+    margin-right: 0;
+    padding: .5em 0;
+    width: 47.5%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 719px) {
+/* Handheld Landscape */
+  .l-adr-header { /* Address of the community */
+    font-size: 1rem;
+  }
+  .l-header_sign {
+      height: 5em;
+  }
+  .l-title {
+    font-size: 1.3rem;
+  }
+  .l-wrapper {
+    margin-left: .25em;
+    margin-right: .25em;
+  }
+}
+@media screen and (min-width: 960px) {
+/* Desktop, Tablet Landscape */
+  .l-bl { /* Adjusts bulleted list alignment */
+    margin-left: .25rem;
+  }
+  .l-content {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .l-wrapper {
+    width: 960px;
+  }
