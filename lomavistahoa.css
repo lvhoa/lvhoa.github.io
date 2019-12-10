@@ -1,265 +1,174 @@
-/*
-  $ MARGIN RESET
-*/
-
-body,
-div {
-  margin: 0;
-  padding: 0;
+/* Use Inter Font */
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
 }
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove Default Margins */
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  line-height: 1.4em;
-  margin: 0 0 1.5rem;
+li,
+p {
+  margin: 0;
 }
-a {
-  text-decoration: none;
-}
-  a:link {
-    color: #07c;
-  }
-    a:visited {
-      color: #4a6b82;
-    }
-    a:hover {
-      color: #0af;
-    }
-    a:active {
-      color: #2d3618;
-    }
 
-/*
-  $ BODY CLASSES
-  Listed in alphabetical order
-*/
-
-.body-lvhoa {
+/* Body Defaults & Styles */
+body {
   background-attachment: fixed;
   background-color: #d7ddc8;
-  background-image: -webkit-linear-gradient(#a1b392, #d7ddc8 400px);
-    background-image: -moz-linear-gradient(#a1b392, #d7ddc8 400px);
-    background-image: linear-gradient(#a1b392, #d7ddc8 400px);
-  font-family: 'Open Sans', Helmet, Freesans, sans-serif;
+  background-image: linear-gradient(#a1b392, #d7ddc8 25em);
+  color: black;
+  line-height: 1.5;
+  margin: 0.5em;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+a:link {
+  color: #07c;
+}
+  a:visited {
+    color: #4a6b82;
+  }
+  a:hover {
+    color: #0af;
+  }
+  a:active {
+    color: #2d3618;
+  }
+
+/* Article Flow */
+article > * + * {
   margin-top: 1em;
 }
 
-/*
-  $ CLASSES
-  Listed in alphabetical order
-*/
-
-.alert-link {
-  font-weight: bold;
+/* Responsive Images */
+img {
+  max-width: 100%;
 }
 
-.l-adr { /* Street addresses */
-}
-  .l-adr-header { /* Address of the community */
-    letter-spacing: .125em;
-  }
-  .l-adr-email {
-  }
-    .l-adr-email::after {
-      color: #686;
-      content: "("attr(data-email)")";
-      font-size: .75em;
-      font-weight: normal;
-      margin-left: .3em;
-    }
-.l-notice {
-  font-size: 1.5em;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.l-dload { /* Links to downloadable documents */
-}
-  .l-dload::after {
-    color: #686;
-    content: "(."attr(title)")";
-    font-size: .75em;
-    font-weight: normal;
-    margin-left: .3em;
-  }
-.l-header {
-    color: #fff;
-}
-  .l-header_sign {
-      background: url(loma-vista-sign-large.jpg) no-repeat center 37%;
-      -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-      background-size: cover;
-      display: block;
-      height: 224px;
-  }
-.l-hn {
-  font-family: 'Arbutus Slab', Georgia, serif;
-  font-weight: normal;
-}
-  .l-hn-header {
-    color: #fff;
-  }
-  .l-hn_info {
-    margin-bottom: .1rem;
-  }
-  .l-hn-section {
-    color: #4c5425;
-    font-size: 2.25rem;
-  }
-  .l-hn-subsection {
-    color: #161;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-.l-isle {
-  padding: 1rem;
-}
-.l-jump {
-  float: right;
-  margin: 0;
-}
-  .l-jump a {
-    background-color: #c5c5c5;
-    border-radius: .5em;
-    color: #fff;
-    display: inline-block;
-    font-size: .6em;
-    font-weight: normal;
-    padding: .25em 1em;
-    text-align: right;
-  }
-    .l-jump a:hover {
-      background-color: #888;
-    }
-
-
-.l-module {
-  border: 1px solid #b4b4ac;
-  border-radius: .375rem;
-  margin-bottom: 1em;
-}
-  .l-module_header {
-    background-color: #4c5425;
-    text-align: center;
-  }
-  .l-module_content {
-    background-color: #f4f4ec;
-  }
-
-  .l-module--danger { /* Warning Message */
-    background-color: #fdd;
-    border-color: #ecc;
-    color: #a44;
-  }
-    .l-module--danger .alert-link {
-      color: #833;
-    }
-
-
-.l-title {
-  font-size: 2.5rem;
-}
-.l-wrapper {
+/* Container */
+.container {
   margin: auto;
-}
-.nav {
-  list-style: none;
-}
-  .nav-header {
-    text-align: center;
-  }
-  .nav_link {
-    background-color: rgba(14, 25, 12, .5);
-    border-bottom: 2px solid #010;
-    border-radius: .250rem;
-    display: inline-block;
-    padding: .5em;
-    margin-right: 1.25em;
-  }
-    .nav_link:hover {
-      background-color: rgba(0, 25, 0, .9);
-    }
-    .nav_link a {
-      color: #ffd;
-    }
-      .nav_link a:hover {
-        color: #fff;
-      }
-    .nav_link-last {
-      margin-right: 0;
-    }
-.outdated {
-  color: #676;
+  max-width: 1000px;
 }
 
-/*
-  $ RESPONSIVE
-*/
+/* Flexbox */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 640px) {
+  .flex.container {
+    display: block;
+  }
+}
+.flex.inner {
+  align-items: flex-start;
+}
+@media (max-width: 440px) {
+  .flex.inner {
+    justify-content: center;
+  }
+  .flex.inner > * {
+    flex: 1 1 100%;
+  }
+}
 
-@media screen and (max-width: 479px) {
-/* Handheld Portrait */
-  .l-adr-header { /* Address of the community */
-    font-size: 0.9rem;
-  }
-  .l-bl { /* Adjusts bulleted list alignment */
-    list-style-position: outside;
-    margin-left: -1.25rem;
-  }
-  .l-header_sign {
-      height: 7em;
-  }
-  .l-hn-section {
-    font-size: 1.5rem;
-  }
-    .l-hn-subsection  {
-      font-size: 1rem;
-    }
-  .l-title {
-    font-size: 1.25rem;
-  }
-  .l-wrapper {
-  margin-left: .5em;
-  margin-right: .5em;
-  }
-  .nav_link {
-    margin-bottom: .5em;
-    margin-right: 0;
-    padding: .5em 0;
-    width: 47.5%;
-  }
+/* Media Object */
+.media-fig {
+  margin-right: 1em;
+  max-width: 100px;
+  width: 100px;
 }
-@media screen and (min-width: 480px) and (max-width: 719px) {
-/* Handheld Landscape */
-  .l-adr-header { /* Address of the community */
-    font-size: 1rem;
-  }
-  .l-header_sign {
-      height: 5em;
-  }
-  .l-title {
-    font-size: 1.3rem;
-  }
-  .l-wrapper {
-    margin-left: .25em;
-    margin-right: .25em;
-  }
+.media-body {
+  flex: 1;
 }
-@media screen and (min-width: 960px) {
-/* Desktop, Tablet Landscape */
-  .l-bl { /* Adjusts bulleted list alignment */
-    margin-left: .25rem;
-  }
-  .l-content {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-  .l-wrapper {
-    width: 960px;
-  }
+
+/* Tiles */
+.tile {
+  background-color: #f4f4ec;
+  border: 1px solid #b4b4ac;
+  flex: 1 0 calc(50% - 0.5em);
+  margin: 0.25em;
+  padding: 0.5em;
+}
+.tile,
+.tile header {
+  border-radius: 0.375em;
+}
+.wide {
+  flex-basis: calc(100% - 0.5em);
+}
+
+/* Title Card */
+.title-card {
+  background: url(//lvhoa.com/loma-vista-sign-large.jpg) no-repeat center 37%;
+  background-size: cover;
+  min-height: 200px;
+  padding: 0;
+  position: relative;
+}
+.title-card header {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 30%,
+    rgba(0, 0, 0, 0.75) 65%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+  bottom: 0;
+  color: white;
+  line-height: 1.25;
+  padding: 0.625em 0.5em;
+  position: absolute;
+  width: 100%;
+}
+
+/* Headings */
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.75em;
+}
+h3 {
+  font-size: 1.5em;
+}
+.tile h2,
+.tile h3 {
+  color: #4c5425;
+}
+.outer-head {
+  margin: 0.375em;
+}
+
+/* Note */
+.note {
+  font-size: 0.85em;
+}
+.alert {
+  color: #a33;
+}
+
+/* Display Email Addresses after Links */
+.email::after {
+  content: "("attr(data-email)")";
+  display: inline-block;
+  font-size: .75em;
+  padding-left: .3em;
+  text-decoration: none;
+}
