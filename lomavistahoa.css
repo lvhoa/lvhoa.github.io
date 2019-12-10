@@ -72,7 +72,8 @@ img {
   flex-wrap: wrap;
 }
 @media (max-width: 640px) {
-  .flex.container {
+  .flex.container,
+  section > .flex {
     display: block;
   }
 }
