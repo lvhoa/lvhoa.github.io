@@ -73,7 +73,7 @@ img {
 }
 @media (max-width: 640px) {
   .flex.container,
-  section > .flex {
+  section .flex {
     display: block;
   }
 }
