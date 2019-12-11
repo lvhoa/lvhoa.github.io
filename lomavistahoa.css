@@ -27,9 +27,9 @@ p {
 
 /* Body Defaults & Styles */
 body {
-  background-attachment: fixed;
   background-color: #d7ddc8;
   background-image: linear-gradient(#a1b392, #d7ddc8 25em);
+  background-attachment: fixed;
   color: black;
   line-height: 1.5;
   margin: 0.5em;
