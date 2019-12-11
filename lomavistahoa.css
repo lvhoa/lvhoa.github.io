@@ -66,6 +66,12 @@ img {
   margin: auto;
   max-width: 1000px;
 }
+@supports(padding: max(0px)) {
+  .container {
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+  }
+}
 
 /* Flexbox */
 .flex {
