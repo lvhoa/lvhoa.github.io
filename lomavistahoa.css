@@ -73,10 +73,9 @@ img {
   flex-wrap: wrap;
 }
 @media (max-width: 640px) {
-  .flex.container,
   section .flex,
-  .phone-numbers strong,
-  .phone-numbers span {
+  .flex.container,
+  .phone-numbers strong {
     display: block;
   }
 }
