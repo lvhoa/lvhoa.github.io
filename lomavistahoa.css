@@ -110,7 +110,7 @@ img {
 	border: 1px solid #b4b4ac;
 	flex: 1 0 calc(50% - 0.5em);
 	margin: 0.25em;
-	padding: 1em;
+	padding: 1.5em;
 }
 .tile,
 .tile header {
