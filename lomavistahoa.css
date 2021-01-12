@@ -1,19 +1,19 @@
 /* Use Inter Font */
 @import url("https://rsms.me/inter/inter.css");
 html {
-  font-family: "Inter", sans-serif;
+	font-family: "Inter", sans-serif;
 }
 @supports (font-variation-settings: normal) {
-  html {
-    font-family: "Inter var", sans-serif;
-  }
+	html {
+		font-family: "Inter var", sans-serif;
+	}
 }
 
 /* Box Sizing */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Remove Default Margins */
@@ -22,162 +22,162 @@ h2,
 h3,
 li,
 p {
-  margin: 0;
+	margin: 0;
 }
 
 /* Body Defaults & Styles */
 body {
-  background-color: #d7ddc8;
-  background-image: linear-gradient(#a1b392, #d7ddc8 25em);
-  background-attachment: fixed;
-  color: black;
-  line-height: 1.5;
-  margin: 0.5em;
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  -webkit-text-size-adjust: 100%;
+	background-color: #d7ddc8;
+	background-image: linear-gradient(#a1b392, #d7ddc8 25em);
+	background-attachment: fixed;
+	color: black;
+	line-height: 1.5;
+	margin: 0.5em;
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	-webkit-text-size-adjust: 100%;
 }
 a:link {
-  color: #07c;
+	color: #07c;
 }
-  a:visited {
-    color: #4a6b82;
-  }
-  a:hover {
-    color: #0af;
-  }
-  a:active {
-    color: #2d3618;
-  }
+	a:visited {
+		color: #4a6b82;
+	}
+	a:hover {
+		color: #0af;
+	}
+	a:active {
+		color: #2d3618;
+	}
 
 /* Article Flow */
 article > * + * {
-  margin-top: 1em;
+	margin-top: 1em;
 }
 
 /* Responsive Images */
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 /* Container */
 .container {
-  margin: auto;
-  max-width: 1000px;
+	margin: auto;
+	max-width: 1000px;
 }
 @supports(padding: max(0px)) {
-  .container {
-    padding-left: max(12px, env(safe-area-inset-left));
-    padding-right: max(12px, env(safe-area-inset-right));
-  }
+	.container {
+		padding-left: max(12px, env(safe-area-inset-left));
+		padding-right: max(12px, env(safe-area-inset-right));
+	}
 }
 
 /* Flexbox */
 .flex {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 @media (max-width: 640px) {
-  section .flex,
-  .flex.container,
-  .phone-numbers strong {
-    display: block;
-  }
+	section .flex,
+	.flex.container,
+	.phone-numbers strong {
+		display: block;
+	}
 }
 .flex.inner {
-  align-items: flex-start;
+	align-items: flex-start;
 }
 @media (max-width: 440px) {
-  .flex.inner {
-    justify-content: center;
-  }
-  .flex.inner > * {
-    flex: 1 1 100%;
-  }
+	.flex.inner {
+		justify-content: center;
+	}
+	.flex.inner > * {
+		flex: 1 1 100%;
+	}
 }
 
 /* Media Object */
 .media-fig {
-  margin-right: 1em;
-  max-width: 100px;
-  width: 100px;
+	margin-right: 1em;
+	max-width: 100px;
+	width: 100px;
 }
 .media-body {
-  flex: 1;
+	flex: 1;
 }
 
 /* Tiles */
 .tile {
-  background-color: #f4f4ec;
-  border: 1px solid #b4b4ac;
-  flex: 1 0 calc(50% - 0.5em);
-  margin: 0.25em;
-  padding: 0.5em;
+	background-color: #f4f4ec;
+	border: 1px solid #b4b4ac;
+	flex: 1 0 calc(50% - 0.5em);
+	margin: 0.25em;
+	padding: 0.5em;
 }
 .tile,
 .tile header {
-  border-radius: 0.375em;
+	border-radius: 0.375em;
 }
 .wide {
-  flex-basis: calc(100% - 0.5em);
+	flex-basis: calc(100% - 0.5em);
 }
 
 /* Title Card */
 .title-card {
-  background: url(//lvhoa.com/loma-vista-sign-large.jpg) no-repeat center 37%;
-  background-size: cover;
-  min-height: 200px;
-  padding: 0;
-  position: relative;
+	background: url(//lvhoa.com/loma-vista-sign-large.jpg) no-repeat center 37%;
+	background-size: cover;
+	min-height: 200px;
+	padding: 0;
+	position: relative;
 }
 .title-card header {
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.65) 30%,
-    rgba(0, 0, 0, 0.75) 65%,
-    rgba(0, 0, 0, 0.85) 100%
-  );
-  bottom: 0;
-  color: white;
-  line-height: 1.25;
-  padding: 0.625em 0.5em;
-  position: absolute;
-  width: 100%;
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.65) 30%,
+		rgba(0, 0, 0, 0.75) 65%,
+		rgba(0, 0, 0, 0.85) 100%
+	);
+	bottom: 0;
+	color: white;
+	line-height: 1.25;
+	padding: 0.625em 0.5em;
+	position: absolute;
+	width: 100%;
 }
 
 /* Headings */
 h1 {
-  font-size: 2em;
+	font-size: 2em;
 }
 h2 {
-  font-size: 1.75em;
+	font-size: 1.75em;
 }
 h3 {
-  font-size: 1.5em;
+	font-size: 1.5em;
 }
 .tile h2,
 .tile h3 {
-  color: #4c5425;
+	color: #4c5425;
 }
 .outer-head {
-  margin: .375em;
+	margin: .375em;
 }
 
 /* Note */
 .note {
-  font-size: .85em;
+	font-size: .85em;
 }
 .alert {
-  color: #a33;
+	color: #a33;
 }
 
 /* Display Email Addresses after Links */
 .email::after {
-  content: "("attr(data-email)")";
-  display: inline-block;
-  font-size: .75em;
-  padding-left: .3em;
-  text-decoration: none;
+	content: "("attr(data-email)")";
+	display: inline-block;
+	font-size: .75em;
+	padding-left: .3em;
+	text-decoration: none;
 }
